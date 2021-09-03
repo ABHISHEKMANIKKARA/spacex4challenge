@@ -47,7 +47,7 @@ function Launch({ launch, currPage }) {
 
                 </tbody> : ""}
             </table>
-            <Modal aria-labelledby="contained-modal-title-vcenter" centered show={show} onHide={handleClose} >
+           {/* <Modal aria-labelledby="contained-modal-title-vcenter" centered show={show} onHide={handleClose} >
                 <Modal.Header closeButton>
                     <div className="detail-heading">
                             <img className="detail-logo" src={JSON.parse(localStorage.getItem("sample")).links.mission_patch_small} alt="no image"/>
@@ -108,7 +108,7 @@ function Launch({ launch, currPage }) {
                         </div>
                     </div>
                 </Modal.Body>
-            </Modal>
+                </Modal>*/}
         </div>
     )
 }
