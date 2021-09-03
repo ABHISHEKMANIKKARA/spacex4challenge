@@ -1,0 +1,12 @@
+.body{
+    margin:0px;
+}
+.heading{
+    position:relative;
+    text-align: center;
+}
+
+.logo{
+    width:260px;
+    height:130px;
+}

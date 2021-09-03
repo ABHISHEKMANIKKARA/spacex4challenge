@@ -1,0 +1,57 @@
+.nodata{
+    font-size: 14px;
+    color: #374151;
+    text-align: center;
+}
+
+.success{
+    width: 72px;
+    height: 21px;
+    background-color: #DEF7EC;
+    text-align: center;
+    border-radius: 20px;
+    margin:auto;
+    display:table;
+}
+
+.failed{
+    width: 72px;
+    height: 21px;
+    background-color: #FDE2E1;
+    text-align: center;
+    border-radius: 20px;
+    margin:auto;
+    display:table;
+}
+.upcoming{
+     
+    width: 90px;
+    height: 13px;
+    background-color: #c0b1a8;
+    text-align: center;
+    border-radius: 20px;
+    margin:auto;
+    display:table;
+}
+.table-row:hover{
+    cursor: pointer;
+    color:darkgrey;
+}
+.detail-heading{
+    display:flex;
+}
+.detail-logo{
+  height:50px;
+  width:50px;
+}
+.detail-heading>div{
+
+    margin-left: 20px;
+}
+
+.info>div{
+  border-top: 2px solid #bbb;
+  margin-top: 12px;
+ padding-top: 12px;
+  font-size: 14px;
+}

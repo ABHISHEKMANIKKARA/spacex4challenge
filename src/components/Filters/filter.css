@@ -1,0 +1,33 @@
+.font{
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color:#4B5563;
+}
+.filter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.past>div{
+ margin-left: 3px;
+ margin-bottom: 7px;
+ display: block;
+}
+.react-calendar{
+    width:300px;
+    height:350px
+}
+.day>div>a{
+    color:rgb(129, 109, 109);
+    text-decoration: none;
+    
+}
+
+.day>div>a:hover{
+    background-color:rgb(218, 214, 214);
+    width:100%;
+    border-radius: 5px;
+    padding:5px;
+    
+}
