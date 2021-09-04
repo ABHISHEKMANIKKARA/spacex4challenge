@@ -15,6 +15,7 @@ function Filter({filter,secondfilter}) {
     //function for updating date filter to url
 
     let dateFilter=()=>{
+
         if(window.location.search){
             console.log(valueFirst)
             var queryParams = new URLSearchParams(window.location.search);
@@ -62,35 +63,30 @@ function Filter({filter,secondfilter}) {
     return (
         <div>
         <div className="filter">
-           
                 <div>
                     <button data-toggle="modal" class="btn" data-target=".bd-example-modal-lg" style={{border:"none",background: "none"}}><p className="font"><img src="https://img.icons8.com/material-outlined/24/000000/calendar--v1.png"/>{secondfilter}</p></button>
                 </div>
-
                 <div>
-                    
                     <div class="dropdown">
-                        
                         <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><img src="https://img.icons8.com/material-outlined/24/000000/filter--v1.png"/>{filter}</button>
                         <div class="dropdown-menu">
-
                            <a class="dropdown-item" onClick={()=>{ history.push('/')}} href="">All Launches</a>
                             <a class="dropdown-item" onClick={()=>{ launchFilter("success")}} href="">Successfull Launches</a>
-                             <a class="dropdown-item" onClick={()=>{launchFilter("failed")}} href="">Failed Launches</a>
+                            <a class="dropdown-item" onClick={()=>{launchFilter("failed")}} href="">Failed Launches</a>
                             <a class="dropdown-item" onClick={()=>{launchFilter("upcoming")}} href="">Upcoming Launches</a>
                         </div>
                     </div>
                 </div> 
         </div>
-<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-    <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+             </button>
         </div>
-    <div class="row" style={{margin:"10px"}}>
+        <div class="row" style={{margin:"10px"}}>
                 <div class="col-2 past day">
                     <div class="row"><a onClick={()=>{dayFilter("pastweek")} } href="">Past Week</a></div>
                     <div class="row"><a onClick={()=>{dayFilter("pastmonth")} } href="">Past Month</a></div>
@@ -107,14 +103,13 @@ function Filter({filter,secondfilter}) {
                 </div>
           </div>
           <div class="modal-footer">
-        <a onClick ={dateFilter} href=""><button type="button" class="btn btn-primary"  data-dismiss="modal">Save</button></a>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
+             <a onClick ={dateFilter} href=""><button type="button" class="btn btn-primary"  data-dismiss="modal">Save</button></a>
+             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         </div>
     </div>
-  </div>
+    </div>
 </div>
-</div>
-    )
+</div>)
 }
 
 export default Filter
